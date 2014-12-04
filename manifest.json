@@ -1,15 +1,8 @@
-{
-  "manifest_version": 2,
-
-  "name": "One-click Kittens",
-  "description": "This extension demonstrates a 'browser action' with kittens.",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "https://secure.flickr.com/"
-  ]
-}
+{"name": "Download Filename Controller",
+ "description": "Download Filename Controller",
+ "version": "0.1",
+ "background": {"scripts": ["bg.js"], "persistent": false},
+ "options_page": "options.html",
+ "permissions": ["downloads"],
+ "content_security_policy": "script-src 'self' chrome-extension-resource: 'unsafe-eval'; default-src 'self'",
+ "manifest_version": 2}
